@@ -9,3 +9,5 @@ After the ad recommendation, the system receives feedback from the user in the f
 The system continues to make recommendations and receive feedback until the algorithm learns which ad has the highest selection index. At this point, the system stops making recommendations and recommends only the best ad to the user.
 
 Overall, the ad recommendation system provides an efficient and effective way to optimize ad selection and increase user engagement with the ads.
+
+added Thompson Modelling alternative to it , which is a better approach. as UCB was predicting the ad with highest conversion rate in about 700 rounds instead fo 10,000 , Thompson's sampling took just 300 runs to predict. Advantage of TS is that it can handle non-stationary rewards, where the rewards of each arm change over time. UCB assumes that the rewards are stationary, and this can lead to suboptimal performance when the rewards change. TS, on the other hand, can adapt to changing rewards and adjust its exploration-exploitation trade-off accordingly.
